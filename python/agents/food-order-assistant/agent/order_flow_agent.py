@@ -52,11 +52,10 @@ def get_next_agent(session_state: dict[str, Any]) -> str:
 
 
 def create_agent(genai_client: Client):
-    # preorder_agent_model = "gemini-2.5-flash-lite"
+    # Update models as needed.
     preorder_agent_model = "gemini-2.5-flash"
     menu_agent_model = "gemini-2.5-flash"
     confirmation_agent_model = "gemini-2.5-flash"
-    # user_info_agent_model = "gemini-2.5-flash-lite"
     user_info_agent_model = "gemini-2.5-flash"
 
     logger.info(f"## preorder_agent: {preorder_agent_model}")
